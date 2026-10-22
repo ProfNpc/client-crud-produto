@@ -47,7 +47,7 @@ export default function EditarProduto() {
 
     try {
       await atualizarProduto(id, produto);
-      navigate('/', { state: { mensagem: 'Produto atualizado com sucesso' } });
+      navigate('/produtos', { state: { mensagem: 'Produto atualizado com sucesso' } });
     } catch (e) {
       setErro('Não foi possível atualizar o produto. ' + e.message);
       setSalvando(false);
@@ -80,7 +80,7 @@ export default function EditarProduto() {
           <input id="preco" type="number" step="0.01" value={preco} onChange={(e) => setPreco(e.target.value)} />
 
           <div className="barra-rodape">
-            <button type="button" className="botao botao-secundario" onClick={() => navigate('/')}>
+            <button type="button" className="botao botao-secundario" onClick={() => navigate('/produtos')}>
               Cancelar
             </button>
             <button type="submit" className="botao botao-primario" disabled={salvando}>

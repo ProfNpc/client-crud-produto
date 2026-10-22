@@ -24,7 +24,7 @@ export default function NovoProduto() {
 
     try {
       await criarProduto(produto);
-      navigate('/', { state: { mensagem: 'Produto criado com sucesso' } });
+      navigate('/produtos', { state: { mensagem: 'Produto criado com sucesso' } });
     } catch (e) {
       setErro('Não foi possível criar o produto. ' + e.message);
       setSalvando(false);
@@ -48,7 +48,7 @@ export default function NovoProduto() {
         <input id="preco" type="number" step="0.01" value={preco} onChange={(e) => setPreco(e.target.value)} />
 
         <div className="barra-rodape">
-          <button type="button" className="botao botao-secundario" onClick={() => navigate('/')}>
+          <button type="button" className="botao botao-secundario" onClick={() => navigate('/produtos')}>
             Voltar
           </button>
           <button type="submit" className="botao botao-primario" disabled={salvando}>

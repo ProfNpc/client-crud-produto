@@ -231,3 +231,34 @@ h1 {
   gap: 8px;
   margin-top: 20px;
 }
+
+/* ---------- Menu de navegação ---------- */
+.menu {
+  display: flex;
+  gap: 4px;
+  padding: 0 24px;
+  background: #1f2933;
+}
+
+.menu-item {
+  padding: 14px 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+
+a.menu-item:hover {
+  background: #323f4b;
+  color: #ffffff;
+}
+
+.menu-item-ativo {
+  color: #ffffff;
+  border-bottom-color: #3b82f6;
+}
+
+.menu-item-desabilitado {
+  color: #7b8794;
+  cursor: not-allowed;
+}

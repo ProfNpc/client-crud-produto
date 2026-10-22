@@ -94,7 +94,7 @@ export default function ListaProdutos() {
       <h1>Lista Produtos</h1>
 
       <div className="barra-topo">
-        <button className="botao botao-primario" onClick={() => navigate('/novo')}>
+        <button className="botao botao-primario" onClick={() => navigate('/produtos/novo')}>
           + Novo
         </button>
       </div>
@@ -144,7 +144,7 @@ export default function ListaProdutos() {
                       className="botao-icone botao-editar"
                       data-tooltip="Editar produto"
                       aria-label="Editar produto"
-                      onClick={() => navigate('/editar/' + produto.id)}
+                      onClick={() => navigate('/produtos/editar/' + produto.id)}
                     >
                       <IconeLapis />
                     </button>

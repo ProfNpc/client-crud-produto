@@ -15,9 +15,10 @@ Acesse http://localhost:5173
 
 | Rota            | Página          | Chamadas à API                                  |
 |-----------------|-----------------|-------------------------------------------------|
-| `/`             | Lista Produtos  | `GET /produtos`, `DELETE /produtos/{id}`        |
-| `/novo`         | Novo Produto    | `POST /produtos` (espera HTTP 201)              |
-| `/editar/:id`   | Editar Produto  | `GET /produtos/{id}`, `PUT /produtos/{id}`      |
+| `/`                      | Principal       | —                                          |
+| `/produtos`              | Lista Produtos  | `GET /produtos`, `DELETE /produtos/{id}`   |
+| `/produtos/novo`         | Novo Produto    | `POST /produtos` (espera HTTP 201)         |
+| `/produtos/editar/:id`   | Editar Produto  | `GET /produtos/{id}`, `PUT /produtos/{id}` |
 
 ## Corpo JSON enviado (POST e PUT)
 
